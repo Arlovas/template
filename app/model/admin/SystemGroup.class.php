@@ -87,4 +87,20 @@ class SystemGroup extends TRecord
         // delete the object itself
         parent::delete($id);
     }
+
+    /**
+     * Get all groups
+     * @return array key + name
+     * @author Artur Comunello
+     */
+    public static function getGroups()
+    {
+        $groups = array();
+
+        $repository = new TRepository('SystemGroup');
+        foreach( $repository->load() as $group)
+            $groups[$group->id] = $group->name;
+
+        return $groups;
+    }
 }
