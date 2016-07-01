@@ -6,4 +6,4 @@ My componentes - adianti framework
 
 Todo:
 [ ] - Define Bootstrap switch as default checkbutton
-[ ] - Create componente noty js foo notification
+[ ] - Create componente noty js for notification
